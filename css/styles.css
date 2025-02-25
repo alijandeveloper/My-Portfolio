@@ -1,0 +1,48 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply background */
+body {
+    position: relative;
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Transparent Red Overlay (More Transparent) */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ef233bf3;/* Reduced opacity (0.2) */
+    z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.container {
+    position: relative;
+    z-index: 2;
+   
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 500px;
+}
